@@ -1,13 +1,13 @@
 {% set name = "label-studio-sdk" %}
-{% set version = "0.0.32" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/label-studio-sdk-{{ version }}.tar.gz
-  sha256: 83ba94157f3849748f1c7b9d56a8f708db3c3f8dc124af4c9e7abf1eddc295c2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 84cd5b0befbbfd0277fe5c94e25f0f7c4a90d62d3e07a15082bb1351732af48d
   patches:
     - setup-py.patch
 
