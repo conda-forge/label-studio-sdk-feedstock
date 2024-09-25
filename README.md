@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@CharalamposGeorgiadis](https://github.com/CharalamposGeorgiadis/)
+* [@moritzwilksch](https://github.com/moritzwilksch/)
 
