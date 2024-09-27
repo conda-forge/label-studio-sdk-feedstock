@@ -1,15 +1,16 @@
 {% set name = "label-studio-sdk" %}
-{% set version = "0.0.32" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/label-studio-sdk-{{ version }}.tar.gz
-  sha256: 83ba94157f3849748f1c7b9d56a8f708db3c3f8dc124af4c9e7abf1eddc295c2
-  patches:
-    - setup-py.patch
+  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+    sha256: 8ee436ed5c3a7bc283de68a5708e0438400fd7f5981ae0a516d44d0a77777302
+  # todo: remove once 1.0.6 ships
+  - url: https://raw.githubusercontent.com/HumanSignal/label-studio-sdk/refs/heads/master/LICENSE
+    sha256: 972b33115efbe4fd8f2e6458ad4d9339067bf4f4b620f2224f24045d4d7c22f0
 
 build:
   noarch: python
@@ -18,14 +19,26 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
+    - poetry
   run:
-    - python >=3.6
+    - python >=3.8
+    - Pillow >=10.0.1
+    - appdirs >=1.4.3
+    - httpx >=0.21.2
+    - ijson >=3.2.3
+    - jsonschema =3.2.0
     - lxml >=4.2.5
-    - requests >=2.22.0,<3
-    - pydantic <3,>1.7
-    - label-studio-tools >=0.0.1
+    - nltk >=3.9.1
+    - numpy <2.0.0
+    - pandas >=0.24.0
+    - pydantic >=1.9.2
+    - requests >=2.22.0
+    - requests-mock =1.12.1
+    - typing_extensions >=4.0.0
+    - ujson >=5.8.0
+    - xmljson =0.2.1
 
 test:
   imports:
@@ -43,4 +56,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - moritzwilksch
     - CharalamposGeorgiadis
