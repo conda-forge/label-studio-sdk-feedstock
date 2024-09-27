@@ -10,7 +10,7 @@ source:
     sha256: 8ee436ed5c3a7bc283de68a5708e0438400fd7f5981ae0a516d44d0a77777302
   # todo: remove once 1.0.6 ships
   - url: https://raw.githubusercontent.com/HumanSignal/label-studio-sdk/refs/heads/master/LICENSE
-    sha256: 972b33115efbe4fd8f2e6458ad4d9339067bf4f4b620f2224f24045d4d7c22f0
+    sha256: ca656b15c1e22468c7798df4356660755fb1ccd12d7ee0bade82bd65e3038e1b
 
 build:
   noarch: python
