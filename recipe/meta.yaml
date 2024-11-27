@@ -1,13 +1,13 @@
 {% set name = "label-studio-sdk" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-    sha256: 392a5274e12e33263afefb92327824e3a79e1f1f570cab83a5fbfa5454cd8b4a
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+    sha256: b26f1518c2dce0da3d535d464bdceedb3fca490153253437395fbe5b32bbc55b
   # todo: remove once 1.0.6 ships
   - url: https://raw.githubusercontent.com/HumanSignal/label-studio-sdk/refs/heads/master/LICENSE
     sha256: ca656b15c1e22468c7798df4356660755fb1ccd12d7ee0bade82bd65e3038e1b
