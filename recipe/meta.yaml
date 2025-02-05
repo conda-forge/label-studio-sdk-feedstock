@@ -1,5 +1,5 @@
 {% set name = "label-studio-sdk" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-    sha256: b26f1518c2dce0da3d535d464bdceedb3fca490153253437395fbe5b32bbc55b
+    sha256: be5ad5345010797acfa3c27313331c22a391e83843c5db02a87e57130ed1a5c8
 
 build:
   noarch: python
