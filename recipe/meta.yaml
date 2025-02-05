@@ -20,7 +20,7 @@ requirements:
     - pip
     - poetry
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - Pillow >=10.0.1
     - appdirs >=1.4.3
     - httpx >=0.21.2
