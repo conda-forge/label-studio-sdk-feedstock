@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: label-studio-sdk
-  version: "1.0.12"
+  version: "1.0.13"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-    sha256: b02db9cba8075cc01cfee5145c29f0cce9c370a0cdd5918de892987e6a18453b
+    sha256: 44a15b4060d51df92ec052065646fe9472d8637191ed76b9b213ecf3c6ac9ffb
 
 build:
   number: 0
