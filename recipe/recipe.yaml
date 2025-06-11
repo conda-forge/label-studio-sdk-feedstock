@@ -43,6 +43,7 @@ requirements:
     - ujson >=5.8.0
     - xmljson ==0.2.1
     - datamodel-code-generator ==0.26.1
+    - opencv ==4.9.*
 
 tests:
   - python:
